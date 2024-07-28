@@ -1,0 +1,16 @@
+server:
+    port: 8085
+    host: localhost
+
+database:
+    type: mongodb
+    dsn: mongodb://localhost:27017/testdb
+    max_open_conns: 10
+    max_idle_conns: 10
+    conn_max_lifetime: 10
+
+external_services:
+    user:
+        base_url: http://localhost:8075
+        timeout: 10
+        api_token: api-key-123-456
